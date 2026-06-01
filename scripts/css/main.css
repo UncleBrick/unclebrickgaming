@@ -21,18 +21,17 @@ body {
     background: linear-gradient(to top, var(--bg-bottom) 0%, var(--bg-top) 45%);
 }
 
-.landing {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    padding: 1rem 1.5rem 4rem;
-}
-
 .logo-wrapper {
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo-wrapper {
+    display: fixed;
+    top: 0;
+    left: 0;
     flex-direction: column;
     align-items: center;
 }
@@ -48,7 +47,7 @@ body {
 }
 
 .status {
-    margin-top: 0.75rem;
+    margin-top: 520px;
     font-size: 1.5rem;
     line-height: 1.4;
     letter-spacing: 0.08em;
